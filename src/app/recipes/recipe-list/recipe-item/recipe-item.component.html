@@ -1,0 +1,20 @@
+<a
+  style="cursor: pointer;"
+  class="list-group-item list-group-item-action flex-column align-items-start clearfix"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+>
+  <div class="d-flex w-100 justify-content-between">
+    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+    <span class="badge">
+      <!-- src= "{{ recipe.imagePath }}" -->
+      <img
+        [src]="recipe.imagePath"
+        class="img-fluid rounded"
+        alt="{{ recipe.name }}"
+        style="max-height: 5em;"
+      />
+    </span>
+  </div>
+  <p class="list-group-item-text">{{ recipe.description }}</p>
+</a>
